@@ -2,52 +2,151 @@ body{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    height: 100vh;
-    background: url(https://images7.alphacoders.com/805/805197.jpg) no-repeat;
-    
-
+    list-style-type: none;
+    background-color: aqua;
+    font-family:sans-serif;
 
 }
-
-.world{
-    width: 502px;
-    height: 502px;
-    margin-top: 250px;
-    background-color: aquamarine;
-    border-radius: 50%;
-    position: relative;
-    
-}
-.worldimage{
-    width: 502px;
-    height: 502px;
-    background-color: aquamarine;
-    border-radius: 50%;
-    background-image: url(https://besthqwallpapers.com/Uploads/23-1-2017/12656/thumb2-world-map-4k-geographical-map-earth.jpg);
-    background-size: cover;
-    animation: mert infinite linear 10s 0s;
-
-
-}
-.golge{
-    width: 505px;
-    top: -2px;
-    right: -2px;
-    height: 505px;
-    border-radius: 50%;
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 47%, rgba(0,0,0,1) 74%, rgba(0,0,0,1) 100%);    
+.skorboard{
+    width: 500px;
+    height: 300px;
+    border: 4px solid red;
     position: absolute;
-  
-
+    top: 8%;
+    left: 34%;
+    border-radius: 10px;
+}
+.skorboardyazi{
+    position: absolute;
+    top: 1%;
+    left: 39%;
+    font-size: 50px;
+    color: rgba(158, 12, 12, 0.842);
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif
 
 }
+.oyuncuyuvarlak{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 33px;
+    background-color: white;
 
-@keyframes mert{
-    from{}
+}
+.oyuncular{
+    display: flex;
+    
+}
+.oyuncu2yuvarlak{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 110px;
+    background-color: white;
+    
 
-    to{background-position: -1000px 0;  }
+}
+.oyuncuyazi{
+    margin-top: 60px;
+    margin-left: 72px;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    padding-bottom: 2px;
 
+    
+}
+.oyuncu2yazi{
+    margin-top: 60px;
+    padding-bottom: 5px;
+    font-size: 40px;
+    margin-left:102px ;
+    color: white;
+    font-weight: 600;
+}
+.vs{
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    font-size: 60px;
+    color: white;
+}
+.tas img{
+    width: 120px;
+    height: 120px;
+}
+.simgeler{
+    display: flex;
+    position: absolute;
+    top: 45%;
+    left: 24%;
+    column-gap: 280px;
+    cursor: pointer;
+}
+.makas img{
+    width: 120px;
+    height: 120px;
+}
+.kagit img{
+    width: 120px;
+    height: 120px;
+}
+.secim{
+    font-size: 62px;
+    position: absolute;
+    top: 58%;
+    left: 32%;
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.secimsoru img{
+    width: 150px;
+    height: 140px;
+    position: absolute;
+    top: 67%;
+    left: 33%;
+}
+.bilgisayarsoru img{
+    width: 150px;
+    height: 140px;
+    position: absolute;
+    top: 67%;
+    left: 56%;
+}
+.bilgisayarsecim{
+    font-size: 62px;
+    position: absolute;
+    top: 58%;
+    left: 52%;
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+
+}
+.puan1{
+    margin-left: 55px;
+    margin-top: 32px;
+    font-size: 76px;
+}
+.puan2{
+    margin-left: 55px;
+    margin-top: 32px;
+    font-size: 76px;
+}
+.kazanan{
+    font-size: 40px;
+    border: 2px solid red;
+    max-width: max-content;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 120px;
+    padding-right: 120px;
+    position: absolute;
+    top: 86%;
+    left: 30.3%;
+    font-weight: 800;
 }
