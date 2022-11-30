@@ -197,7 +197,7 @@ li:hover{
 .resim3::after{
     content: '';
     position: absolute;
-    background: url(96beeedb207a4c74690ba4bb11e55c20.jpg);
+    background: url(https://i.pinimg.com/550x/96/be/ee/96beeedb207a4c74690ba4bb11e55c20.jpg);
     inset: 4px;
     border-radius: 40px;
     z-index: -1;
