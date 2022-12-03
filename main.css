@@ -284,7 +284,6 @@ li:hover{
 .bilgiler21{
     color: rgb(61, 61, 61);
     font-weight: 800;    
-    margin-top: 2px;
     font-size: 15px;
     margin-left: 25px;
     display: none;
@@ -292,9 +291,8 @@ li:hover{
 .bilgiler22{
     color: rgb(61, 61, 61);
     font-weight: 800;    
-    margin-top: 3px;
     margin-left: 22px;
-    font-size: 15px;
+    font-size: 13px;
     display: none;
     font-weight: 800;
 
@@ -366,5 +364,6 @@ li:hover{
     margin-left: 24px;
     font-size: 18px;
 }
+
 
 
