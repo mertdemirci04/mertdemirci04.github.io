@@ -7,13 +7,21 @@ body{
     list-style-type: none;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 98vh;
+    height: 100%;
+    width: 100%;
 }
 ul{
     list-style-type: none;
     display: flex;
     margin-left: 580px;
 
+}
+.cizgi{
+    width: 100%;
+    border-bottom: 2px solid rgb(82, 82, 82);
+    position: absolute;
+    top: 150px;
+    box-shadow: 0px 4px 6px black;
 }
 
 .navbarbaslik{
@@ -25,8 +33,13 @@ ul{
     top: 10px;
     user-select:none;
     margin-top: 10px;
+
 }
 
+.ul{
+    text-shadow: 3px 3px rgb(153, 153, 153); 
+
+}
 li{
     margin-left: 60px;
     font-size: 25px;
@@ -52,8 +65,8 @@ li:hover{
 
 .resim img{
     border-radius: 50%;
-    margin-left: 192px;
-    margin-top: 130px;
+    margin-left: 160px;
+    margin-top: 120px;
 }
 .resim{
     display: flex;
@@ -66,37 +79,45 @@ li:hover{
     margin-left: 80px;
     font-weight: 900;
     font-family: 'Times New Roman', Times, serif;
+    text-shadow: 4px 4px rgb(153, 153, 153);
 
 }
 .yazilar{
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 80px;
-    margin-top: 13px;    
+    margin-top: 13px;   
+    text-shadow: 2px 2px rgb(153, 153, 153); 
     
 }
 .yazilar1{
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 80px;
-    margin-top: 13px;    
+    margin-top: 13px;  
+    text-shadow: 2px 2px rgb(153, 153, 153); 
+  
     
 }
 .yazilar2{
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 80px;
     margin-top: 13px;    
+    text-shadow: 2px 2px rgb(153, 153, 153); 
+
     
 }
 .yazilar3{
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 80px;
     margin-top: 13px;    
+    text-shadow: 2px 2px rgb(153, 153, 153); 
+
     
 }
 .resimler{
     display: flex;
     transition: 600ms all;
     position: absolute;
-    top: 530px;
+    top: 550px;
 }
 .resim1{
     width: 250px;
@@ -370,22 +391,22 @@ li:hover{
 .logolar{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin-top: 180px;
-    font-size: 55px;
-    margin-right: 50px;
+    position: absolute;
+    font-size: 50px;
+    top: 610px;
     
 }
+.logobir{
+    margin-left: 25px;
+}
 .logoiki{
-    padding-left: 20px;
-
+    margin-left: 25px;
 }
 .logouc{
-    padding-left: 20px;
-
+    margin-left: 25px;
 }
 .logodort{
-    padding-left: 20px;
+    margin-left: 25px;
 }
 
 
