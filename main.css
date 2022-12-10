@@ -7,10 +7,66 @@ body{
     list-style-type: none;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    min-height: 97vh;
     width: 100%;
 }
-ul{
+
+
+.navigation{
+    width:50px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    top: 45px;
+    right: 50px;
+    transition: width 0.3s, height 0.3s;
+    transition-delay: 0s,0.75s; 
+    z-index: 10000;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.navigation .buton{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: aquamarine;
+    transition: 0.5s;
+
+}
+
+.navigation.active{
+    width: 250px;
+    height: 350px;
+    transition: height 0.3s, width 0.3s;
+    transition-delay: 0s,0.5s;
+}
+.navigation .buton.active{
+    background-color:rgb(156, 238, 238)
+}
+.navigation .buton.active::before{
+    transform: rotate(360deg);
+}
+.navigation .buton::before{
+    content: '+';
+    position: absolute;
+    font-size: 2.8em;
+    left: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-weight: 400;
+    transition: 0.5s;
+
+}
+.ul{
     list-style-type: none;
     display: flex;
     margin-left: 580px;
@@ -37,6 +93,36 @@ ul{
 
 
 }
+.hakkimda:hover{
+    scale: 1.1;
+    transition: 300ms;
+    border-bottom: 2px solid aqua;
+    cursor: pointer;
+}
+.iletişim:hover{
+    scale: 1.1;
+    transition: 300ms;
+    border-bottom: 2px solid aqua;
+    cursor: pointer;
+
+
+}
+.cv:hover{
+    scale: 1.1;
+    transition: 300ms;
+    border-bottom: 2px solid aqua;
+    cursor: pointer;
+
+
+}
+.proje:hover{
+    scale: 1.1;
+    transition: 300ms;
+    border-bottom: 2px solid aqua;
+    cursor: pointer;
+
+
+}
 
 .ul{
     text-shadow: 3px 3px rgb(153, 153, 153); 
@@ -46,7 +132,28 @@ ul{
 .projeler{
     position: absolute;
 }
-li{
+.hakkimda{
+    margin-left: 60px;
+    font-size: 25px;
+    margin-top: 40px;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.cv{
+    margin-left: 60px;
+    font-size: 25px;
+    margin-top: 40px;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.iletişim{
+    margin-left: 60px;
+    font-size: 25px;
+    margin-top: 40px;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.proje{
     margin-left: 60px;
     font-size: 25px;
     margin-top: 40px;
@@ -62,14 +169,6 @@ li{
     user-select: none;
     text-shadow: 3px 3px rgb(153, 153, 153); 
 
-}
-li:hover{
-     color: aqua;
-    cursor: pointer;
-    transition: 400ms all;
-    border-bottom: 3px solid aqua;
-    scale: 1.1;
-   
 }
 
 .resim img{
@@ -129,6 +228,33 @@ li:hover{
     position: absolute;
     top: 550px;
 }
+.secenek{
+    position: absolute;
+    top: 40px;
+    left: -30px;
+    text-decoration: none;
+    font-size: 22px;
+
+}
+.secenek a{
+    text-decoration: none;
+
+}
+.navigation ul li{
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 60px;
+    transition: 400ms;
+
+}
+.navigation ul li:hover {
+    background-color: rgb(99, 223, 223);
+}
+.secenek i{
+    padding-right: 30px;
+    height: 35px;
+}
+
 .resim1{
     width: 250px;
     height: 120px;
@@ -540,6 +666,9 @@ li:hover{
     border-radius: 40px;
     box-shadow: 6px 6px 7px rgb(75, 75, 75);
 
+}
+.logolar a{
+    color: rgb(2, 64, 73);
 }
 
 
