@@ -98,12 +98,15 @@ body{
     transition: 300ms;
     border-bottom: 2px solid aqua;
     cursor: pointer;
+    color: aqua;
+
 }
 .iletişim:hover{
     scale: 1.1;
     transition: 300ms;
     border-bottom: 2px solid aqua;
     cursor: pointer;
+    color: aqua;
 
 
 }
@@ -112,6 +115,7 @@ body{
     transition: 300ms;
     border-bottom: 2px solid aqua;
     cursor: pointer;
+    color: aqua;
 
 
 }
@@ -120,14 +124,13 @@ body{
     transition: 300ms;
     border-bottom: 2px solid aqua;
     cursor: pointer;
+    color: aqua;
 
 
 }
 
 .ul{
     text-shadow: 3px 3px rgb(153, 153, 153); 
-
-
 }
 .projeler{
     position: absolute;
@@ -264,7 +267,7 @@ body{
     border-radius: 40px;
     transition: 700ms all;
     overflow: hidden; 
-    z-index: -2;
+    z-index: 1;
     box-shadow: 6px 6px 7px rgb(75, 75, 75);
 
 }
@@ -279,7 +282,7 @@ body{
     height: 280%;
     background: linear-gradient(#ddd,#6e6d6d);
     animation: alternate linear infinite 4s 0s animate;
-    z-index: -2;
+    z-index: -1;
 }
 @keyframes animate{
     0%{
@@ -310,7 +313,7 @@ body{
     border-radius: 40px;
     transition: 700ms all;
     overflow: hidden;
-    z-index: -2;
+    z-index: 1;
     box-shadow: 6px 6px 7px rgb(75, 75, 75);
 
 }
@@ -345,7 +348,7 @@ body{
     left: 1150px;
     border-radius: 40px;
     transition: 700ms all;
-    z-index: -2;
+    z-index: 1;
     overflow: hidden;
     box-shadow: 6px 6px 7px rgb(75, 75, 75);
 
@@ -670,6 +673,10 @@ body{
 .logolar a{
     color: rgb(2, 64, 73);
 }
+
+
+
+
 
 
 
