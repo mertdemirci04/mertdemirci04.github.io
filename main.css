@@ -2,731 +2,168 @@ body{
     padding: 0;
     margin: 0;
     text-decoration: none;
-    font-family:'Oswald', sans-serif;;
-    background-image: url(https://mirekoc.ku.edu.tr/wp-content/uploads/2014/08/gri-arka-plan.jpg);
-    list-style-type: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 97vh;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Rubik+80s+Fade&family=Rubik+Spray+Paint&family=Rubik+Vinyl&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
-.navigation{
-    width:50px;
-    height: 50px;
-    background-color: #fff;
-    position: absolute;
-    top: 45px;
-    right: 50px;
-    transition: width 0.3s, height 0.3s;
-    transition-delay: 0s,0.75s; 
-    z-index: 10000;
-    border-radius: 10px;
-    overflow: hidden;
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(12, 2, 22);
+    margin-top: 13px;
+    align-items: center;
+    box-shadow: 3px 2px 10px 12px black;
     
 }
-.navigation .buton{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: aquamarine;
+.navbarlogo{
+    font-family: 'Rubik Spray Paint', cursive; 
+    font-size: 52px;   
+    color: white;
+    box-sizing:border-box;
+}
+.navbar li a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 28px;
+    margin-left: 45px;
+    font-family: 'Oswald', sans-serif;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 20px;
     transition: 0.5s;
 
-}
 
-.navigation.active{
-    width: 250px;
-    height: 350px;
-    transition: height 0.3s, width 0.3s;
-    transition-delay: 0s,0.5s;
 }
-.navigation .buton.active{
-    background-color:rgb(156, 238, 238)
+.navbar li a:hover{
+    background-color: rgb(49, 11, 84);
 }
-.navigation .buton.active::before{
-    transform: rotate(360deg);
+.navbar li{
+    list-style-type: none;
+    display: inline-block;
+
+
 }
-.navigation .buton::before{
-    content: '+';
-    position: absolute;
-    font-size: 2.8em;
-    left: 12px;
+.mediumarea{
+    width: 100%;
+    height: 90vh;
+    background-image: url(https://r.resimlink.com/Phtdk-.jpg);
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    flex-direction: column;
+
+}
+.mediumarea h4 {
     color: white;
-    font-weight: 400;
-    transition: 0.5s;
-
-}
-.ul{
-    list-style-type: none;
-    display: flex;
-    margin-left: 580px;
-
-}
-.cizgi{
-    width: 100%;
-    border-bottom: 2px solid rgb(82, 82, 82);
-    position: absolute;
-    top: 150px;
-    box-shadow: 0px 4px 6px black;
-}
-
-.navbarbaslik{
-    margin: 40px;
-    font-size: 60px;
+    font-size:57px;
     font-weight: 600;
-    margin-left: 70px;
-    position: absolute;
-    top: 10px;
-    user-select:none;
-    margin-top: 10px;
-    text-shadow: 4px 4px rgb(128, 127, 127); 
-
-
+    font-family: 'Rubik 80s Fade', cursive;
+    margin-bottom: 20px;
+    position: relative;
+    top: -8%;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
 }
-.hakkimda:hover{
-    scale: 1.1;
-    transition: 300ms;
-    border-bottom: 2px solid aqua;
-    cursor: pointer;
-    color: aqua;
-
-}
-.iletişim:hover{
-    scale: 1.1;
-    transition: 300ms;
-    border-bottom: 2px solid aqua;
-    cursor: pointer;
-    color: aqua;
-
-
-}
-.cv:hover{
-    scale: 1.1;
-    transition: 300ms;
-    border-bottom: 2px solid aqua;
-    cursor: pointer;
-    color: aqua;
-
-
-}
-.proje:hover{
-    scale: 1.1;
-    transition: 300ms;
-    border-bottom: 2px solid aqua;
-    cursor: pointer;
-    color: aqua;
-
-
-}
-
-.ul{
-    text-shadow: 3px 3px rgb(153, 153, 153); 
-}
-.projeler{
-    position: absolute;
-}
-.hakkimda{
-    margin-left: 60px;
-    font-size: 25px;
-    margin-top: 40px;
-    font-weight: 100;
-    font-family:'Oswald', sans-serif;;
-}
-.cv{
-    margin-left: 60px;
-    font-size: 25px;
-    margin-top: 40px;
-    font-weight: 100;
-    font-family:'Oswald', sans-serif;;
-}
-.iletişim{
-    margin-left: 60px;
-    font-size: 25px;
-    margin-top: 40px;
-    font-weight: 100;
-    font-family:'Oswald', sans-serif;;
-}
-.proje{
-    margin-left: 60px;
-    font-size: 25px;
-    margin-top: 40px;
-    font-weight: 100;
-    font-family:'Oswald', sans-serif;;
-}
-.meslek{
-    position: absolute;
-    top: 100px;
-    font-size: 28px;
-    left: 75px;
-    font-family: 200;
-    user-select: none;
-    text-shadow: 3px 3px rgb(153, 153, 153); 
-
-}
-
-.resim img{
-    border-radius: 50%;
-    margin-left: 160px;
-    margin-top: 120px;
-    box-shadow: 10px 10px 10px  rgb(80, 80, 80);
-}
-.resim{
+.mediumarea .button{
     display: flex;
 }
-
-.yazibaslik{
-    text-transform: uppercase;
-    font-size: 50px;
-    margin-top: 120px;
-    margin-left: 80px;
-    font-weight: 900;
-    font-family:'Oswald', sans-serif;;
-    text-shadow: 4px 4px rgb(153, 153, 153);
-
-}
-.yazilar{
-    font-size: 25px;
-    margin-left: 80px;
-    margin-top: 13px;   
-    text-shadow: 2px 2px rgb(153, 153, 153); 
-    
-}
-.yazilar1{
-    font-size: 25px;
-    margin-left: 80px;
-    margin-top: 13px;  
-    text-shadow: 2px 2px rgb(153, 153, 153); 
-  
-    
-}
-.yazilar2{
-    font-size: 25px;
-    margin-left: 80px;
-    margin-top: 13px;    
-    text-shadow: 2px 2px rgb(153, 153, 153); 
-
-    
-}
-.yazilar3{
-    font-size: 25px;
-    margin-left: 80px;
-    margin-top: 13px;    
-    text-shadow: 2px 2px rgb(153, 153, 153); 
-
-    
-}
-.resimler{
+.mediumarea .button a{
+    width: 200px;
+    height:50px;
     display: flex;
-    transition: 600ms all;
-    position: absolute;
-    top: 550px;
-}
-.secenek{
-    position: absolute;
-    top: 40px;
-    left: -30px;
+    border: 2px solid #ddd;
+    align-items: center;
     text-decoration: none;
-    font-size: 22px;
-
-}
-.secenek a{
-    text-decoration: none;
-
-}
-.navigation ul li{
-    border-radius: 10px;
-    padding: 10px;
-    padding-right: 60px;
-    transition: 400ms;
-
-}
-.navigation ul li:hover {
-    background-color: rgb(99, 223, 223);
-}
-.secenek i{
-    padding-right: 30px;
-    height: 35px;
-}
-
-.resim1{
-    width: 250px;
-    height: 120px;
-    background-image: url(https://st.depositphotos.com/1813957/4911/i/950/depositphotos_49113051-stock-photo-light-blue-background.jpg);
-    position: absolute;
-    left: 550px;
-    border-radius: 40px;
-    transition: 700ms all;
-    overflow: hidden; 
-    z-index: 1;
-    box-shadow: 6px 6px 7px rgb(75, 75, 75);
-
-}
-
-.resim1::before{
-    content: '';
-    position: absolute;
-    left: 60px;
-    top: -40px;
-    width: 125px;
-    border-radius: 40px;
-    height: 280%;
-    background: linear-gradient(#ddd,#6e6d6d);
-    animation: alternate linear infinite 4s 0s animate;
-    z-index: -1;
-}
-@keyframes animate{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-
-
-
-}
-.resim1::after{
-    content: '';
-    position: absolute;
-    background: url(https://st.depositphotos.com/1813957/4911/i/950/depositphotos_49113051-stock-photo-light-blue-background.jpg);
-    inset: 4px;
-    z-index: -1;
-    border-radius: 40px;
-
-}
-.resim2{
-    width: 250px;
-    height: 120px;
-    background-image: url(https://st.depositphotos.com/1813957/4911/i/950/depositphotos_49113051-stock-photo-light-blue-background.jpg);
-    position: absolute;
-    left: 850px;
-    border-radius: 40px;
-    transition: 700ms all;
-    overflow: hidden;
-    z-index: 1;
-    box-shadow: 6px 6px 7px rgb(75, 75, 75);
-
-}
-
-.resim2::before{
-    content: '';
-    position: absolute;
-    left: 60px;
-    top: -55px;
-    width: 125px;
-    border-radius: 40px;
-    height: 240%;
-    z-index: -2;
-    background: linear-gradient(#ddd,#6e6d6d);
-    animation: alternate linear infinite 4s 0s animate;
-    
-}
-.resim2::after{
-    content: '';
-    position: absolute;
-    background: url(https://st.depositphotos.com/1813957/4911/i/950/depositphotos_49113051-stock-photo-light-blue-background.jpg);
-    inset: 4px;
-    z-index: -1;
-    border-radius: 40px;
-
-}
-.resim3{
-    width: 250px;
-    height: 120px;
-    background-image: url(https://st.depositphotos.com/1813957/4911/i/950/depositphotos_49113051-stock-photo-light-blue-background.jpg);
-    position: absolute;
-    left: 1150px;
-    border-radius: 40px;
-    transition: 700ms all;
-    z-index: 1;
-    overflow: hidden;
-    box-shadow: 6px 6px 7px rgb(75, 75, 75);
-
-}
-.resim3::before{
-    content: '';
-    position: absolute;
-    left: 60px;
-    top: -66px;
-    width: 125px;
-    border-radius: 40px;
-    height: 240%;
-    background: linear-gradient(#ddd,#6e6d6d);
-    animation: alternate linear infinite 4s 0s animate;
-    z-index: -2;
-}
-.resim3::after{
-    content: '';
-    position: absolute;
-    background: url(https://st.depositphotos.com/1813957/4911/i/950/depositphotos_49113051-stock-photo-light-blue-background.jpg);
-    inset: 4px;
-    border-radius: 40px;
-    z-index: -1;
-}
-
-.resim1:hover{
-    border: 4px solid white;
-    transform: translateY(-20px);
-}
-.resim2:hover{
-    border: 4px solid white;
-    transform: translateY(-20px);
-}
-.resim3:hover{
-    border: 4px solid white;
-    transform: translateY(-20px);
-}
-.resimbaslik{
-    margin-left: 32px;
+    background-color: rgba(230, 222, 238, 0.651);
+    justify-content: center;
     font-size: 25px;
-    margin-top: 10px;
-    color: black;
-    font-weight: 800;
-}
-.anayazi button{
-    width: 130px;
-    height: 40px;
-    margin-left: 60px;
-    margin-top: 12px;
-    line-height: 15px;
-    border-radius: 10px;
-    border: 2px solid white;
-    font-weight: 800;
-    background-image: url(https://st.depositphotos.com/1813957/4911/i/950/depositphotos_49113051-stock-photo-light-blue-background.jpg);
-    background-size: cover;
-    color: black;
-
-}
-.anayazi button:active{
-    display: none;
-}
-.kodlar{
-    display: none;
-
-}
-.anayazi button:active + .kodlar{
-    display: block;
-    margin-left: 24px;
-    margin-top: 28px;
-    font-size: 16px;
-    font-weight: 800;
-    color: rgb(61, 61, 61);
-}
-.resimbaslik2{
-    margin-left: 29px;
-    color: black;
-    margin-top: 4px;
-    font-size: 24px;
-    font-weight: 800;
-}
-.anayazi2 button{
-    width: 130px;
-    height: 40px;
-    margin-left: 60px;
-    margin-top: 16px;
-    border-radius: 10px;
-    border: 2px solid white;
-    font-weight: 800;
-    line-height: 15px;
-    background-image: url(https://st.depositphotos.com/1813957/4911/i/950/depositphotos_49113051-stock-photo-light-blue-background.jpg);
-    background-size: cover;
-    color: black;
-}
-.bilgiler2{
-    color: rgb(61, 61, 61);
-    font-weight: 800;
-    margin-top: -20px;
-    margin-left: 25px;
-    font-size: 15px;
-    display: none;
-}
-.bilgiler21{
-    color: rgb(61, 61, 61);
-    font-weight: 800;    
-    font-size: 15px;
-    margin-left: 25px;
-    display: none;
-}
-.bilgiler22{
-    color: rgb(61, 61, 61);
-    font-weight: 800;    
-    margin-left: 22px;
-    font-size: 13px;
-    display: none;
-    font-weight: 800;
-
-}
-.anayazi2 button:active{
-    display: none;
-}
-.anayazi2 button:active + .bilgilerr .bilgiler2{
-    display: block;
-    margin-top: 10px;
-}
-.anayazi2 button:active + .bilgilerr .bilgiler21{
-    display: block;
-
-}
-.anayazi2 button:active + .bilgilerr .bilgiler22{
-    display: block;
-
-}
-.anayazi3 button{
-    width: 130px;
-    height: 40px;
-    margin-left: 60px;
-    margin-top: 20px;
-    font-size: 14px;
-    border-radius: 10px;
-    border: 2px solid white;
-    font-weight: 800;
-    line-height: 15px;
-    background-image: url(https://st.depositphotos.com/1813957/4911/i/950/depositphotos_49113051-stock-photo-light-blue-background.jpg);
-    background-size: cover;
-    color: rgb(0, 0, 0);
-}
-.resimbaslik3{
     margin-left: 20px;
-    color: black;
-    margin-top: 6px;
-    font-size: 19px;
-    font-weight: 800;
-}
-.bilgilerrr{
-    display: none;
+    border-radius: 10px;
+    font-family: 'Rubik 80s Fade', cursive;
+    color: rgb(0, 0, 0);
     font-weight: 600;
+    padding: 5px;
+    transition: 0.3s;
+
+
+
 }
-.anayazi3 button:active + .bilgilerrr{
+.mediumarea .button a:hover{
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.bottomarea{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.area{
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 22%;
+    text-align: justify;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    background-image: linear-gradient(rgb(222, 198, 221),rgb(82, 31, 31));
+    color: white;
+
+}
+.css{
+    width: 300px;
+    height: 245px;
+    
+}
+.js{
+    width: 500px;
+    height: 250px;
+}
+.c{
+    width: 300px;
+    height: 300px;
+}
+.navbar span{
+    color: white;
+    font-size: 300%;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:765px){
+   .bottomarea{
+    flex-wrap: wrap;
+    
+   }
+   .area{
+    width: 100%;
+    padding: 10px;
+   }
+   .mediumarea h4{
+    font-size: 250%;
+   }
+   .navbar ul{
+    display: none;
+   }
+   .navbar span{
     display: block;
-}
-.anayazi3 button:active{
-    display: none;
-}
-.bilgiler3{
-    color: rgb(61, 61, 61);
-    font-weight: 800;
-    margin-top: 1px;
-    margin-left: 24px;
-    font-size: 18px;
-}
-.bilgiler31{
-    color: rgb(61, 61, 61);
-    font-weight: 800;
-    margin-top: 25px;
-    margin-left: 24px;
-    font-size: 18px;
-}
-.bilgiler32{
-    color: rgb(61, 61, 61);
-    font-weight: 800;
-    margin-top: -50px;
-    margin-left: 24px;
-    font-size: 18px;
-}
-.logolar{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    font-size: 50px;
-    top: 610px;
     
 }
-.logobir{
-    margin-left: 25px;
-}
-.logoiki{
-    margin-left: 25px;
-}
-.logouc{
-    margin-left: 25px;
-}
-.logodort{
-    margin-left: 25px;
-}
-.projeler1{
-    display: flex;
-    position: absolute;    
-    
-}
-.projeler{
-    display: none;
-}
-.projeler2{
-    display: flex;
-    position: absolute;
-}
-.proje1{
-    background-color: rgb(64, 233, 64) ;
-    width: 252px;
-    padding: 5px;
-    position: absolute;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    left: 550px;
-    top: 100px;
-    font-weight: 600;
-    height: 100px;
-    border-radius: 40px;
-    font-family:'Oswald', sans-serif;;
-    box-shadow: 6px 6px 7px rgb(75, 75, 75);
-
-
-}
-.proje2{
-    background-color: rgb(98, 234, 234) ;
-    width: 252px;
-    padding: 5px;
-    position: absolute;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    left: 870px;
-    top: 100px;
-    font-weight: 600;
-    height: 100px;
-    border-radius: 40px;
-    font-family:'Oswald', sans-serif;;
-    box-shadow: 6px 6px 7px rgb(75, 75, 75);
-
-
-}
-.proje3{
-    background-color: rgb(228, 58, 58);
-    width: 252px;
-    padding: 5px;
-    position: absolute;
-    font-size: 26px;
-    display: flex;
-    align-items: center;
-    left: 1190px;
-    top: 100px;
-    font-weight: 600;
-    height: 100px;
-    border-radius: 40px;
-    font-family:'Oswald', sans-serif;;
-    box-shadow: 6px 6px 7px rgb(75, 75, 75);
-
-
-}
-.proje4{
-    background-color: rgb(171, 236, 236) ;
-    width: 252px;
-    padding: 5px;
-    position: absolute;
-    font-size: 26px;
-    display: flex;
-    align-items: center;
-    left: 870px;
-    top: 270px;
-    font-weight: 600;
-    height: 100px;
-    border-radius: 40px;
-    font-family:'Oswald', sans-serif;;
-    box-shadow: 6px 6px 7px rgb(75, 75, 75);
-
-
-}
-.proje5{
-    background-color: rgb(152, 228, 152) ;
-    width: 252px;
-    padding: 5px;
-    position: absolute;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    left: 550px;
-    top: 270px;
-    font-weight: 600;
-    height: 100px;
-    font-family:'Oswald', sans-serif;;   
-    box-shadow: 6px 6px 7px rgb(75, 75, 75);
-    border-radius: 40px;
-}
-.proje6{
-    background-color: rgb(202, 116, 116) ;
-    font-family:'Oswald', sans-serif;;
-    width: 252px;
-    padding: 5px;
-    position: absolute;
-    font-size: 27px;
-    display: flex;
-    align-items: center;
-    left: 1190px;
-    top: 270px;
-    font-weight: 600;
-    height: 100px;
-    border-radius: 40px;
-    box-shadow: 6px 6px 7px rgb(75, 75, 75);
-
-}
-.logolar a{
-    color: rgb(2, 64, 73);
+   
 }
 
-@media(max-width:768px){
-
-
-    .resim img{
-        position: absolute;
-        top: 7%;
-        left: -35%;
-        width: 140px;
-        height: 140px;
-    }
-    .navbarbaslik{
-        font-size: 42px;
-        position: absolute;
-        top: 2%;
-        left: -10%;
-    }
-    .meslek{
-        position: absolute;
-        left: 8%;
-        top: 12%;
-    }
-    .navigation{
-        position: absolute;
-        top: 8%;
-        right: 6%;
-    }
-    .yazibaslik{
-        position: relative;
-        top: 25%;
-        left: 33%;
-        margin-top: 130px;
-        padding-bottom: 80px;
-        font-size: 37px;
-    }
-    .yazi{
-        position: absolute;
-        top: 9%;
-        margin-left: -60px;
-
-    }
-    .logolar{
-        position: absolute;
-        bottom:7%;
-        font-size: 50px;
-    }
-    .resimler{
-        display: none;
-    }
-    .ul{
-        display: none;
-    }
-}
 
 
 
