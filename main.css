@@ -17,7 +17,7 @@ body{
     background-color: rgb(12, 2, 22);
     margin-top: 13px;
     align-items: center;
-    box-shadow: 3px 2px 10px 12px black;
+    box-shadow: 3px 2px 10px black;
     
 }
 .navbarlogo{
@@ -26,7 +26,7 @@ body{
     color: white;
     box-sizing:border-box;
 }
-.navbar li a{
+.navbar .li a{
     text-decoration: none;
     list-style-type: none;
     color: white;
@@ -40,10 +40,10 @@ body{
 
 
 }
-.navbar li a:hover{
+.navbar .li a:hover{
     background-color: rgb(49, 11, 84);
 }
-.navbar li{
+.navbar .li{
     list-style-type: none;
     display: inline-block;
 
@@ -128,7 +128,7 @@ body{
     
 }
 .js{
-    width: 500px;
+    width: 450px;
     height: 250px;
 }
 .c{
@@ -141,27 +141,121 @@ body{
     cursor: pointer;
     display: none;
 }
-
-@media (max-width:765px){
-   .bottomarea{
-    flex-wrap: wrap;
-    
-   }
-   .area{
-    width: 100%;
-    padding: 10px;
-   }
-   .mediumarea h4{
-    font-size: 250%;
-   }
-   .navbar ul{
-    display: none;
-   }
-   .navbar span{
-    display: block;
+.navigation{
+    width:50px;
+    height: 50px;
+    background-color: rgb(21, 18, 24);
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    transition: width 0.3s, height 0.3s;
+    transition-delay: 0s,0.45s; 
+    z-index: 10000;
+    border-radius: 10px;
+    overflow: hidden;
     
 }
-   
+.navigationn{
+    display: none;
+}
+.navigation .toggle{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(41, 40, 47);
+    transition: 0.5s;
+
+}
+
+.navigation .toggle::before{
+    content: '+';
+    position: absolute;
+    font-size: 2.5em;
+    left: 12px;
+    top: -4px;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-weight: 400;
+    transition: 0.5s;
+
+}
+.navigation .toggle.active::before{
+    transform: rotate(360deg);
+}
+.navigation.active{
+    width: 265px;
+    height: 470px;
+    transition: height 0.3s, width 0.3s;
+    transition-delay: 0s,0.5s;
+    
+}
+.navigation .toggle.active{
+    background-color:rgb(37, 21, 37)
+}
+.list{
+    list-style-type: none;
+}
+.list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    margin-left: -30px;
+    padding: 30px;
+    padding-right: 50px;
+    line-height: 120px;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding-left: 10px;
+}
+.list li a .about{
+    padding-right: 30px;
+}
+.list li a .history{
+    padding-right: 10px;
+}
+.list li a:hover{
+    background-color: rgb(46, 20, 70);
+}
+
+@media (max-width:765px){
+    .bottomarea{
+     flex-wrap: wrap;
+     
+    }
+    .area{
+     width: 100%;
+     padding: 10px;
+    }
+    .mediumarea h4{
+     font-size: 220%;
+    }
+    .navbar .li{
+     display: none;
+    }
+    .navbar span{
+     display: block;
+     
+ }
+ .mediumarea .button a{
+     margin-left: 10px;
+     width: 160px;
+     height:40px;
+     font-size: 20px;
+ 
+ }
+ .navigationn{
+     display: block;
+ 
+ }
+
 }
 
 
