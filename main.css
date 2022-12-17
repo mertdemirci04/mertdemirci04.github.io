@@ -128,7 +128,7 @@ body{
     
 }
 .js{
-    width: 340px;
+    width: 380px;
     height: 245px;
 }
 .c{
@@ -255,5 +255,9 @@ body{
      display: block;
  
  }
+ .js{
+    width: 300px;
+    height: 245px;
+}
 
 }
