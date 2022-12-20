@@ -385,4 +385,7 @@ body{
     border-bottom: 2px solid rgba(255, 253, 253, 0.16);
 
 }
+.icons a:nth-child(1){
+    margin-left: 1px;
+}
 }
