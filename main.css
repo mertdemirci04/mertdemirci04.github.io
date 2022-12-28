@@ -4,7 +4,7 @@ body{
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Rubik+80s+Fade&family=Rubik+Spray+Paint&family=Rubik+Vinyl&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
@@ -44,15 +44,16 @@ body{
 
 
 }
+
 .navbar .li2 a{
     text-decoration: none;
     list-style-type: none;
     color: white;
-    font-size: 28px;
+    font-size: 36px;
     font-family: 'Oswald', sans-serif;
     padding: 10px;
     position: absolute;
-    right: 3%;
+    right: 2%;
     top: 4%;
     border-radius: 20px;
     transition: 0.5s;
@@ -84,7 +85,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: 0.55s ease;
+    transition: 0.55s all;
     display: none;
 }
 .bar1{
@@ -153,17 +154,17 @@ body{
 
 
 }
+.bottomarea{
+    display: none;
+}
 .mediumarea .button a:hover{
 
     padding-left: 20px;
     padding-right: 20px;
+    box-shadow: 0 0 10px rgba(230, 222, 238, 0.651), 0 0 30px rgba(230, 222, 238, 0.651), 0 0 60px rgba(230, 222, 238, 0.651);
 
 }
-.bottomarea{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+
 .area{
     border: 2px solid gray;
     border-radius: 10px;
@@ -331,8 +332,41 @@ body{
 .icons a:nth-child(4):hover{
     color: rgb(226, 0, 0);
 }
+.darkmode{
+    width: 140px;
+    height: 50px;
+    background-color: rgb(203, 200, 196);
+    position: absolute;
+    right: 2%;
+    border-radius: 30px;
+    cursor: pointer;
 
-@media (max-width:765px){
+}
+.darkmode .darkbutton.active{
+    position: absolute;
+    top: 5px;
+    left: 95px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(216, 38, 38);
+
+}
+.darkmode .darkbutton{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    transition: 0.3s;
+
+    
+}
+
+
+@media (max-width:1100px){
     .bottomarea{
      flex-wrap: wrap;
      
@@ -388,4 +422,81 @@ body{
 .icons a:nth-child(1){
     margin-left: 1px;
 }
+.bottomarea{
+    display: block;
+}
+.bottomarea2{
+    display: none;
+}
+}
+.bottomarea2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    background-color: whitesmoke;    
+}
+.bottomarea2 p{
+    font-family: 'Oswald', sans-serif;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    bottom: -1%;
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+    left: 7%;
+}
+.bottomarea2 h3{
+    font-size: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    bottom: 20%;
+
+}
+.bottomarea2 .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 33%;
+    height: 450px;
+    overflow: hidden;
+    background-image: linear-gradient(rgb(222, 198, 221),rgb(82, 31, 31));
+    transition: 0.5s;
+    border-radius: 10px;
+    position: relative;
+
+
+}
+.bottomarea2 img{
+    width: 350px;
+    height: 350px;
+    transition: 0.5s;
+    position: absolute;
+    top: 10%;
+
+}
+.bottomarea2 .card:hover h3{
+    visibility: inherit;
+    opacity: 1;
+}
+.bottomarea2 .card:hover p{
+    visibility: inherit;
+    opacity: 1;
+}
+.bottomarea2 .card:hover img{
+    scale: 1.1;
+}
+.bottomarea2 .card:hover{
+    background-color: #ddd;
+    height: 660px;
+}
+.bottomarea2 .card img{
+    width: 350px;
+    height: 300px;
 }
