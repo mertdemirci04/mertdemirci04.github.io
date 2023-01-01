@@ -332,103 +332,7 @@ body{
 .icons a:nth-child(4):hover{
     color: rgb(226, 0, 0);
 }
-.darkmode{
-    width: 140px;
-    height: 50px;
-    background-color: rgb(203, 200, 196);
-    position: absolute;
-    right: 2%;
-    border-radius: 30px;
-    cursor: pointer;
 
-}
-.darkmode .darkbutton.active{
-    position: absolute;
-    top: 5px;
-    left: 95px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgb(216, 38, 38);
-
-}
-.darkmode .darkbutton{
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: black;
-    transition: 0.3s;
-
-    
-}
-
-
-@media (max-width:1100px){
-    .bottomarea{
-     flex-wrap: wrap;
-     
-    }
-    .area{
-     width: 100%;
-     padding: 10px;
-    }
-    .mediumarea h4{
-     font-size: 220%;
-    }
-    .navbar .li{
-     display: none;
-    }
-    .navbar span{
-     display: block;
-     
- }
- .mediumarea .button a{
-     margin-left: 10px;
-     width: 160px;
-     height:40px;
-     font-size: 20px;
- 
- }
- .navigationn{
-     display: block;
- 
- }
- .js{
-    width: 300px;
-    height: 245px;
-}
-.li2{
-    display: none;
-}
-.area p{
-    font-size: 20px;
-}
-.infoarea{
-    height: 120vh;
-}
-.infoarea .content{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-    border-bottom: 2px solid rgba(255, 253, 253, 0.16);
-
-}
-.icons a:nth-child(1){
-    margin-left: 1px;
-}
-.bottomarea{
-    display: block;
-}
-.bottomarea2{
-    display: none;
-}
-}
 .bottomarea2{
     display: flex;
     align-items: center;
@@ -499,4 +403,67 @@ body{
 .bottomarea2 .card img{
     width: 350px;
     height: 300px;
+}
+@media (max-width:1100px){
+    .bottomarea{
+     flex-wrap: wrap;
+     
+    }
+    .area{
+     width: 100%;
+     padding: 10px;
+    }
+    .mediumarea h4{
+     font-size: 220%;
+    }
+    .navbar .li{
+     display: none;
+    }
+    .navbar span{
+     display: block;
+     
+ }
+ .mediumarea .button a{
+     margin-left: 10px;
+     width: 160px;
+     height:40px;
+     font-size: 20px;
+ 
+ }
+ .navigationn{
+     display: block;
+ 
+ }
+ .js{
+    width: 300px;
+    height: 245px;
+}
+.li2{
+    display: none;
+}
+.area p{
+    font-size: 20px;
+}
+.infoarea{
+    height: 120vh;
+}
+.infoarea .content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border-bottom: 2px solid rgba(255, 253, 253, 0.16);
+
+}
+.icons a:nth-child(1){
+    margin-left: 1px;
+}
+.bottomarea{
+    display: block;
+}
+.bottomarea2{
+    display: none;
+}
 }
