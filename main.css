@@ -462,6 +462,7 @@ body{
 }
 .bottomarea{
     display: block;
+    width: 94%;
 }
 .bottomarea2{
     display: none;
