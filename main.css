@@ -5,8 +5,9 @@ body{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    scroll-behavior: smooth
 }
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Rubik+80s+Fade&family=Rubik+Spray+Paint&family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Oswald:wght@500&family=Rubik+80s+Fade&family=Rubik+Spray+Paint&family=Rubik+Vinyl&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 .navbar{
@@ -22,10 +23,13 @@ body{
     
 }
 .navbarlogo{
-    font-family: 'Rubik Spray Paint', cursive; 
+    font-family: 'Moon Dance',cursive;   
     font-size: 52px;   
     color: white;
     box-sizing:border-box;
+}
+.navbarlogo i{
+    font-size: 40px
 }
 .navbar .li{
     margin-top: 20px;
@@ -36,7 +40,7 @@ body{
     color: white;
     font-size: 28px;
     margin-left: 45px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Moon Dance',cursive;   
     border: 2px solid #ddd;
     padding: 10px;
     border-radius: 20px;
@@ -70,15 +74,16 @@ body{
 }
 
 .sidebar.active{
-    transform: translateX(167%);
+    right: 0;
     display: block;
+    transition: 0.5s all;
 
 }
 .sidebar{
     position: absolute;
     top: 14%;
     width: 350px;
-    transform: translateX(270%);
+    right: -350px;
     height: 90%;
     background-color: rgb(7, 3, 7);
     border-radius: 30px;
@@ -404,6 +409,84 @@ body{
     width: 350px;
     height: 300px;
 }
+.butonarea{
+    position: absolute;
+    top: 15%;
+    display: none;
+    transition: 0.4s;
+    visibility: hidden;
+
+
+}
+.button1{
+    width: 200px;
+    height: 70px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 30px;
+    background-color: #12123d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    transition: 0.2s;
+}
+.button2{
+    width: 200px;
+    height: 70px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 30px;
+    background-color: #12123d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    transition: 0.2s;
+
+
+
+}
+.button3{
+    width: 200px;
+    height: 70px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 30px;
+    background-color: #12123d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    transition: 0.2s;
+
+
+}
+
+.butonarea.active{
+    display: flex;
+    visibility: visible;
+    transition: 0.5s;
+}
+.button1:hover{
+    scale: 1.1;
+    background-color: #16165d;
+
+}
+.button2:hover{
+    scale: 1.1;
+    background-color: #16165d;
+
+}
+.button3:hover{
+    scale: 1.1;
+    background-color: #16165d;
+
+}
+
 @media (max-width:1100px){
     .bottomarea{
      flex-wrap: wrap;
