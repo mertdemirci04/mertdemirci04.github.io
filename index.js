@@ -1,13 +1,14 @@
-const navigation = document.querySelector('.navigation')
-    document.querySelector(".toggle").onclick = function(){
-        this.classList.toggle('active');
-        navigation.classList.toggle('active');
-    };
+bars = document.querySelector("#bars");
+navbar = document.querySelector(".nav");
 
-const burger = document.querySelector(".li2");
-const sidebar = document.querySelector(".sidebar");
+bars.addEventListener("click",function(){
+    navbar.classList.toggle('active');
+})
 
-burger.addEventListener("click",function(){
-    sidebar.classList.toggle('active');
-    sidebar.style.display = "block"
+
+magni = document.querySelector("#magni");
+form = document.querySelector(".form");
+
+magni.addEventListener("click",function(){
+    form.classList.toggle('active');
 })
