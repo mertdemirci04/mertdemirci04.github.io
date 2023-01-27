@@ -36,8 +36,9 @@ html::-webkit-scrollbar-thumb{
 /*HEADER PART*/
 header{
     display: flex;
+    height: 7rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #fff;
     margin: 1.5rem 3rem;
     border-radius: 30px;
@@ -49,14 +50,14 @@ header{
 header .buttons{
     margin-left: 10rem;
     cursor: pointer;
+    display: flex;
 }
 #bars{
     display: none;
 }
 header .buttons i{
     font-size: 2.2rem;
-    margin-left: 30px;
-    margin-right: 0.5rem;
+    margin-left: 1rem;
 }
 
 header a{
@@ -75,6 +76,7 @@ header nav a.active{
 
 }
 header a img{
+    margin-left: -2rem;
     height: 5rem;
     padding: 1rem 2rem;
 }
@@ -89,7 +91,7 @@ header .form{
     height: 2.5rem;
     top: 110%;
     border-color: white;
-    right: 5%;
+    right: 2%;
     transform: scale(0);
     z-index: -100;
 
@@ -364,8 +366,13 @@ header .form i {
 /*RESPONSİVE PART*/
 
 @media(max-width:950px){
+    body{
+        overflow-x: hidden;
+    }
     header{
         position: relative;
+        height: 6.5rem;
+        margin: 1.5rem 1rem;
     }
     header .nav{
         display: flex;
@@ -390,9 +397,20 @@ header .form i {
         margin: 2.2rem;
         font-size: 2.3rem;
     }  
+    header .buttons{
+        margin-left: -4%;
+    }
+    header .buttons i{
+        font-size: 1.8rem;
+    }
     #bars{
         display: block;
         cursor: pointer;
+    }
+    
+    .main .contents{
+        margin-top: 4rem;
+        margin-left: 1.5rem;
     }
     .down .boxmenu{
         flex-wrap: wrap;
@@ -407,12 +425,11 @@ header .form i {
         flex-wrap: wrap;
     }
     .who .content img{
-        width: 33rem;
-        margin-right: 2rem;
+        width: 19rem;
     }
     .top .logo img{
-        width: 6rem;
-        height: 5rem;
+        width: 5rem;
+        height: 4rem;
     }
     .down{
         margin-left: 1rem;
@@ -427,6 +444,9 @@ header .form i {
         max-width: 100%;
         width: 65%;
     }
+    .down .box img{
+        width: 14rem;
+    }
     .review{
         margin-top: 5rem;
         margin-left: 3.5rem;
@@ -438,6 +458,10 @@ header .form i {
     .review .box{
         margin-top: 2rem;
         max-width: 100%;
+    }
+    .review .box img{
+        width: 6rem;
+        height: 6rem;
     }
     .comments #comments-box1{
         margin-top: 2rem;
