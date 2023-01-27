@@ -293,6 +293,7 @@ header .form i {
 }
 .review .span3{
     color:rgb(250, 71, 21) ;
+    margin-left: 1rem;
 }
 .review .about .span3{
     color:rgb(250, 71, 21) ;
@@ -300,6 +301,7 @@ header .form i {
 
 .review .span1{
     color: black;
+    margin-right: 1rem;
 }
 .comments{
     margin-top: 3rem;
@@ -458,9 +460,6 @@ header .form i {
         margin-left: 3.5rem;
     }
     
-    .review span{
-        font-size: 3.2rem;
-    }
     .review .box{
         margin-top: 2rem;
         max-width: 100%;
@@ -468,6 +467,13 @@ header .form i {
     .review .box img{
         width: 6rem;
         height: 6rem;
+    }
+    .review span{
+        font-size: 3.2rem;
+    }
+    
+    .review .span3,.span2,.span1{
+        margin-left: -1rem;
     }
     .comments #comments-box1{
         margin-top: 2rem;
