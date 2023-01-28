@@ -387,7 +387,7 @@ header .form i {
         top: 100%;
         right: -100%;
         background-color: white;
-        width: 20rem;
+        width: 12rem;
         box-shadow: 2px 4px 16px 2px black;
         border-radius: 20px;
         height: calc(100vh - 9.8rem);
@@ -399,8 +399,12 @@ header .form i {
     }
     header nav a{
         display: block;
-        margin: 2.2rem;
-        font-size: 2.3rem;
+        margin: 1.5rem;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        border-bottom: 1px solid #ddd;
+        border-radius: 5px;
     }  
     header .buttons{
         margin-left: -4%;
@@ -506,6 +510,13 @@ header .form i {
     
 }
 /*RESPONSİVE PART*/
+
+
+
+
+
+
+
 
 
 
