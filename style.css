@@ -91,84 +91,110 @@
     .skill .bar{height:10px;background:rgba(255,255,255,0.03);border-radius:10px;margin-top:10px;overflow:hidden}
     .skill .progress{height:100%;border-radius:10px;background:linear-gradient(90deg, rgba(110,231,183,1), rgba(96,165,250,0.9));transition:width 900ms cubic-bezier(.2,.9,.2,1)}
 
+  
+    section#projects {
+  max-width: var(--max-width);
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  overflow: hidden;
+}
 
+#projects h2 {
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+}
 
-/* MARQUEE */
+#projects p {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+/* === Marquee === */
 .marquee {
   overflow: hidden;
-  width: 100%;
-  margin-top: 16px;
   position: relative;
-  contain: layout paint; /* 💡 Mobil render hatalarını azaltır */
+  width: 100%;
 }
 
 .projects-track {
   display: flex;
-  gap: 16px;
-  align-items: stretch;
-  padding: 8px 0;
   width: max-content;
-  will-change: transform;
-  animation: scroll-left 25s linear infinite;
-  animation-play-state: running;
-  transform: translate3d(0, 0, 0); /* 💡 Donanım hızlandırma */
-  backface-visibility: hidden;     /* 💡 GPU clipping önleme */
+  animation: marquee 30s linear infinite;
 }
 
 .project {
   flex: 0 0 auto;
-  min-width: 260px;
-  max-width: 320px;
+  width: 270px;
+  min-height: 180px;
+  margin-right: 16px;
+  padding: 10px;
+  background: var(--glass);
+  border-radius: var(--radius);
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 14px;
-  border-radius: 12px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
-  border: 1px solid var(--glass-border);
-  transition: transform .18s, box-shadow .18s;
+  justify-content: space-between;
+  transition: transform 0.3s ease, opacity 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
 }
+
+/* Hover efekti */
 .project:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 40px rgba(2,6,23,0.35);
+  transform: scale(1.03);
+  background: rgba(255,255,255,0.08);
 }
 
-/* tags */
-.tags { display:flex; gap:8px; flex-wrap:wrap; }
-.tag { padding:6px 8px; border-radius:8px; background:rgba(255,255,255,0.03); font-size:12px; color:var(--muted); }
-
-.nav-btn {
-  display:inline-block;
-  padding:8px 10px;
-  border-radius:8px;
-  background:rgba(255,255,255,0.03);
-  text-decoration:none;
-  font-size:13px;
-  color:inherit;
-  border:1px solid rgba(255,255,255,0.04);
+/* Tag yapısı */
+.tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 8px;
 }
 
-.reveal:not(.active) .projects-track {
-  animation-play-state: paused;
-}
-.reveal.active .projects-track {
-  animation-play-state: running;
-}
-.marquee:hover .projects-track,
-.marquee:active .projects-track {
-  animation-play-state: paused;
+.tag {
+  font-size: 12px;
+  background: var(--gradient);
+  color: #0b1220;
+  padding: 5px 5px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-weight: 600;
 }
 
-/* Sonsuz kayma */
-@keyframes scroll-left {
+/* === Reveal efekti === */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+/* === Sonsuz kayma animasyonu === */
+@keyframes marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .projects-track { animation: none; }
-  .project { transition: none; }
+/* === Responsive === */
+@media (max-width: 768px) {
+  #projects {
+    padding: 20px;
+  }
+  .project {
+    width: 200px;
+  }
+  section#projects {
+    padding: 30px;
+  }
+  .projects-track {
+  animation: marquee 15s linear infinite;
 }
+
+}
+
 
     /* Blog cards */
         
@@ -251,9 +277,6 @@
       .contact-grid{grid-template-columns:1fr} 
       nav{justify-content:center} 
       .profile{order:-1}
-      .projects-track{
-        animation: scroll-left 25s linear infinite;
-      }   
     }
 
     /* footer */
