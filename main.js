@@ -50,22 +50,6 @@ document.getElementById('year').textContent = new Date().getFullYear();
         el.style.transition = 'none';
       });
     }
-document.addEventListener("DOMContentLoaded", () => {
-  const reveals = document.querySelectorAll('.reveal');
-
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('active');
-        obs.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.15
-  });
-
-  reveals.forEach(el => observer.observe(el));
-});
 window.addEventListener('DOMContentLoaded', () => {
   const progressEls = document.querySelectorAll('.progress');
   progressEls.forEach(p => {
@@ -85,4 +69,34 @@ window.addEventListener('DOMContentLoaded', () => {
 
     obs.observe(p.closest('.skill'));
   });
+});
+
+// === Reveal efekti ===
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
+  const revealPoint = 100;
+
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < windowHeight - revealPoint) {
+      el.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll(); // sayfa yüklenince de uygula
+
+// === Marquee hover durdurma ===
+const track = document.querySelector(".projects-track");
+const marquee = document.querySelector(".marquee");
+
+marquee.addEventListener("mouseenter", () => {
+  track.style.animationPlayState = "paused";
+});
+
+marquee.addEventListener("mouseleave", () => {
+  track.style.animationPlayState = "running";
 });
