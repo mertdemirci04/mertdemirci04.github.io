@@ -51,7 +51,24 @@
     .intro h1{margin:0;font-size:clamp(26px,4vw,40px);line-height:1.03}
     .intro p{color:var(--muted);margin-top:12px;font-size:15px}
     .cta-row{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
-    .btn-primary{background:var(--gradient);padding:10px 16px;border-radius:12px;border:none;color:#04263b;font-weight:700;cursor:pointer;box-shadow:0 8px 20px rgba(6,30,50,0.12)}
+    .btn-primary{background:var(--gradient);padding:10px 22px;border-radius:12px;border:none;color:#04263b;font-weight:700;cursor:pointer;box-shadow:0 8px 20px rgba(6,30,50,0.12)}
+    .btn-outline {
+        border-radius: 8px;
+        padding: 0px 16px;
+        font-weight: 600;
+        background: transparent;
+        color: var(--text);
+        border: 2px solid var(--accent, #007aff);
+        cursor: pointer;
+        transition: all 0.25s ease;
+      }
+
+      .btn-outline:hover {
+        background: var(--accent, #007aff);
+        color: #fff;
+        transform: translateY(-1px);
+      }
+
     .btn-ghost{background:transparent;
       border:1px solid var(--glass-border);
       padding:10px 14px;
@@ -192,7 +209,9 @@
   .projects-track {
   animation: marquee 15s linear infinite;
 }
-
+.btn-outline {
+  padding: 10px 35px;
+}
 }
 
 
